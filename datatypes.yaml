@@ -1,0 +1,54 @@
+myself: Rwitesh Bera # This is known as variable
+fruit: "mango"
+job: 'software engineer'
+
+bio: |
+hey, my name is Rwitesh Bera.
+I am a very nice dude. 
+
+# Write a single line in multiple lines
+message: >
+this is
+a single
+line
+
+# same as
+message: this is a single line
+
+number: 5473
+marks: 98.76
+booleanValue: No # n, N, false, False, FALSE
+# same for true -> Yes, y, Y, YES
+
+
+# specify the data type
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -45
+binaryNum: !!int 0b11001
+octalNum: !!int 06574
+hexaNum: !!int 0x45
+commaValues: !!int +540_000  # 540,000
+exponential numbers: 6.023e56
+
+# floating point numbers
+simpleNumber: !!float 42.23
+infinite: !!float .inf 
+not a number: .nan 
+
+# boolean 
+b: !!bool y 
+
+
+# null
+surname: !!null Null # or null NULL ~
+
+
+# dates and time
+# If the time zone is omitted, the timestamp is assumed to be specified in UTC. 
+date: 2022-01-28
+no time zone: 2021-12-15T02:59:43.10
+
+
+# IST
+india time: 2021-12-15T02:59:43.10 +5:30

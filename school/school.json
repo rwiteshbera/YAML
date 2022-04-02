@@ -1,0 +1,15 @@
+{
+  "School": [
+    {
+      "name": "ABC School",
+      "principal": "Dr. XY sir",
+      "Students": [
+        {
+          "roll": 24,
+          "name": "Rwitesh Bera",
+          "marks": 98
+        }
+      ]
+    }
+  ]
+}

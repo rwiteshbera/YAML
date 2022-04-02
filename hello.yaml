@@ -1,0 +1,27 @@
+--- # --- are used to signal the start of a document
+"apple" : "I am a red fruit"
+1: "This is Rwitesh's roll number"
+
+---
+# lists
+- Apple
+- apple # YAML is case-sensitive
+- mango
+- banana
+
+---
+cities:
+  - new delhi
+  - mumbai
+  - kolkata
+  - bengaluru
+---
+# or
+cities: [new delhi, mumbai]
+
+---
+{fruit: "mango", color: "green"}
+... 
+# ... indicates that the document came to the end
+
+

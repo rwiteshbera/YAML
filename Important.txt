@@ -1,0 +1,19 @@
+YAML - YAML ain't markup language - Data Serialization language
+
+Serialization is a process of converting data object (combination of data + code) into a series of bytes that saves the state of object in a form that is easily transmittable.
+
+Reverse of this is also known as deserialization.
+
+A YAML file is a text document that contains data formatted using YAML (YAML Ain't Markup Language), a human-readable data format used for data serialization. It is used for reading and writing data independent of a specific programming language.
+
+Object to file - Serialization
+File to Object - Deserialization
+
+
+Benefits of YAML 
+1. Simple and easy to read
+2. It has strict syntax - Indentation is important.
+3. Easily convertable to JSON, XML
+4. Most programming language uses YAML
+
+File Name Extension : .yml / .yaml

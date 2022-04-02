@@ -1,0 +1,104 @@
+student: !!seq # seq: sequence
+  - marks
+  - name
+  - roll_no
+
+# like this also
+cities: [new delhi, mumbai]
+
+
+# some of the keys of the sequence will be empty
+# sparse sequence
+space seq:
+  - hey
+  -
+  - Null
+  - sup
+
+
+# nested sequence
+-
+  - mango
+  - apple
+  - banana
+-
+  - marks
+  - roll number
+  - date
+
+
+
+# key: value paris are called maps
+# nested mappings : map within a map
+name: Rwitesh Bera
+role: 
+  age: 20
+  job: student
+
+
+
+# same as
+name: Rwitesh Bera
+role: {age: 20, job: student}
+
+
+# pairs: keys may have duplicate values
+# !!pairs
+pair example: !!pairs
+  - job: student
+  - job: teacher
+
+# same as
+pair example: !!pairs [job: student, job: teacher]
+
+
+
+# !!set will allow you to have unique values
+# set shouldn't have duplicate names
+name: !!set 
+  ? Rwitesh
+  ? Rohan
+  ? Rakesh
+
+
+
+# dictionary !!omap
+# In dictionary, one entire sequence can be represented as value
+people : !!omap
+  - Rwitesh: 
+      name: Rwitesh Bera
+      age: 20
+      id: 5432
+  - Rahul:
+      name: Rahul Pandey
+      age: 30
+      id: 3241
+
+
+
+# Reusing some properties
+# use anchors to stop repeting same properties
+likings: &likes
+  fav fruit: mango
+  dislikes: grapes
+
+
+person1:
+  name: Rwitesh Bera
+  <<: *likes
+
+person2:
+  name: Rahul 
+  <<: *likes
+
+person3:
+  name: Apporv
+  <<: *likes
+# you can override the properties also
+  dislikes: apple
+
+# person3 will look like
+person3:
+  name: Apporv
+  fav fruit: mango
+  dislikes: apple
